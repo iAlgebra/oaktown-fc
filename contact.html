@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<title>Contact Page | Oaktown Football Club</title>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<a href="index.html"><img src="images/logo.png" alt="logo of oaktown football club"/></a>
+			<h2>Oaktown Football Club</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="competitions.html">Competitions</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div id="content">
+			<h1>Contact Us</h1>
+			<p>Hi there!<br/>If you need to get in touch with us, please use the contact form provided below. Our friendly staff will get back to you in 2 business days.</p>
+			<h4>Secretary</h4>
+			<p>Name: Laci Tanner</p>
+			<p>Phone: (02) 6620 3324</p>
+			<p>Email: <a href="mailto:secretary@oaktownfa.com.au?subject=Oaktown%20FC%20Website%20Contact">secretary@oaktownfa.com.au</a></p>
+
+			<form id="form-validation" action="#" method="get"> <!--Chequear todas las clases si son necesarias-->
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" name="name" class="required" id="name" placeholder="Your name here">
+					<p id="name-error"></p>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" name="email" class="required" id="email" placeholder="Your email here">
+					<p id="email-error"></p>
+				</div>
+
+				<div class="form-group">
+					<label for="phone">Phone</label>
+					<input type="number" name="phone" class="required" id="phone" placeholder="Your phone here">
+					<p id="phone-error"></p>
+				</div>
+
+				<div class="form-group">
+					<label for="team">Team</label>
+					<select id="team" name="team">
+						<option>Adults</option>
+						<option>Under 12s</option>
+						<option>Under 6s</option>
+					</select>
+				</div>
+
+				<div id="iam">
+					<span>I am:</span>
+					<label>
+						<input type="radio" name="club_status" value="new_member">Thinking about joining the club
+					</label>
+					<label>
+						<input type="radio" name="club_status" value="club_member">Already a club member
+					</label>
+				</div>
+
+				<div class="form-group">
+					<label for="comments">Comments</label>
+					<textarea id="comments" name="comments" placeholder="We would like to hear from you!" class="required" rows="8"></textarea>
+					<p id="comments-error"></p>
+				</div>
+
+				<input type="submit" name="submit" value="Send" id="submit">
+			</form>
+		</div><!--/content-->
+	</div><!--/wrapper-->
+	<script type="text/javascript" src="js/formValidation.js"></script>
+</body>
+</html>
